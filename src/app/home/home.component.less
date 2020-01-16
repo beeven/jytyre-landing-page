@@ -23,9 +23,16 @@
 
     }
 
-    .instruction {
-        width: 400px;
-        height: 80px;
+    .introduction {
+        margin-top: 20px;
+        width: 800px;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, rgb(206, 7, 7) 10%, rgb(250, 204, 0) 50%, #000000 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: bold;
     }
 
     .text-block.links {
@@ -64,7 +71,7 @@
             h1 {
                 margin-top: 0;
                 margin-bottom: 0.3em;
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
         }
     }
@@ -77,14 +84,14 @@
 @keyframes draw {
     0% {
         fill: rgba(0, 0, 0, 0.5);
-      stroke-dasharray: 140 640;
-      stroke-dashoffset: -570;
-      stroke-width: 12px;
+        stroke-dasharray: 140 640;
+        stroke-dashoffset: -570;
+        stroke-width: 12px;
     }
     100% {
         fill: rgba(0, 0, 0, 0.8);
-      stroke-dasharray: 1260;
-      stroke-dashoffset: 0;
-      stroke-width: 8px;
+        stroke-dasharray: 1260;
+        stroke-dashoffset: 0;
+        stroke-width: 8px;
     }
   }

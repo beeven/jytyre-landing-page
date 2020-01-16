@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-advantage',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
     styleUrls: ['./advantage.component.less']
 })
 export class AdvantageComponent {
-    constructor() { }
+    constructor(private router: Router) { }
+
+    onSwipe(ev: HammerInput) {
+        console.log(ev);
+        if (ev.direction === Hammer.DIRECTION_LEFT) {
+            this.router.navigateByUrl('/history');
+        } else if (ev.direction === Hammer.DIRECTION_RIGHT) {
+            this.router.navigateByUrl('/home');
+        }
+    }
 }

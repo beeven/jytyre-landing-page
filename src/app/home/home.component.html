@@ -1,13 +1,17 @@
-<div class="wrapper">
+<div class="wrapper" (swipe)="onSwipe($event)">
     <!-- <img src="assets/images/home.jpg" alt=""> -->
     <div class="holder">
         <div class="text-block introduction">
-            德国驿达（YEADA）是一个蕴含着精工血统和工匠制造精神的品牌，品牌定位是打造安全舒适的高品质轮胎。
+            <p>
+                德国驿达（YEADA）是一个蕴含着精工血统和工匠制造精神的品牌
+                </p>
+                <p>品牌定位是打造安全舒适的高品质轮胎
+        </p>
         </div>
         <div class="text-block links">
             <a routerLink="/advantage" class="svg-wrapper">
-                <svg height="150" width="320" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="shape" height="150" width="320"></rect>
+                <svg height="140" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="140" width="320"></rect>
                 </svg>
                 <div class="text">
                     <h1>领先技术</h1>
@@ -16,8 +20,8 @@
             </a>
 
             <a routerLink="/about" class="svg-wrapper">
-                <svg height="150" width="320" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="shape" height="150" width="320"></rect>
+                <svg height="140" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="140" width="320"></rect>
                 </svg>
                 <div class="text">
                     <h1>运营模式</h1>

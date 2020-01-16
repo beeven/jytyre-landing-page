@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-about',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./about.component.less']
 })
 export class AboutComponent {
-    constructor() { }
+    constructor(private router: Router) { }
+    onSwipe(ev: HammerInput) {
+        console.log(ev);
+        if (ev.direction === Hammer.DIRECTION_RIGHT) {
+            this.router.navigateByUrl('/history');
+        }
+    }
 }
