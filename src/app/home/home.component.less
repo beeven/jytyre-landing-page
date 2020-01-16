@@ -18,5 +18,73 @@
 
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .instruction {
+        width: 400px;
+        height: 80px;
+    }
+
+    .text-block.links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+    }
+
+    .svg-wrapper {
+        height: 150px;
+        margin: 0 auto;
+        position: relative;
+        // top: 50%;
+        // transform: translateY(-50%);
+        width: 320px;
+        display: block;
+
+        .shape {
+            fill: rgba(0, 0, 0, 0.5);
+            stroke-dasharray: 140 640;
+            stroke-dashoffset: -570;
+            stroke-width: 12px;
+            stroke: #e9c80c;
+        }
+
+        .text {
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 0.3em;
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .svg-wrapper:hover .shape {
+        animation: 0.5s draw linear forwards;
     }
 }
+
+@keyframes draw {
+    0% {
+        fill: rgba(0, 0, 0, 0.5);
+      stroke-dasharray: 140 640;
+      stroke-dashoffset: -570;
+      stroke-width: 12px;
+    }
+    100% {
+        fill: rgba(0, 0, 0, 0.8);
+      stroke-dasharray: 1260;
+      stroke-dashoffset: 0;
+      stroke-width: 8px;
+    }
+  }
