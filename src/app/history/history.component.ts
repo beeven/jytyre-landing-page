@@ -10,7 +10,7 @@ export class HistoryComponent {
     constructor(private router: Router) { }
 
     onSwipe(ev: HammerInput) {
-        console.log(ev);
+        //console.log(ev);
         if (ev.direction === Hammer.DIRECTION_LEFT) {
             this.router.navigateByUrl('/about');
         } else if (ev.direction === Hammer.DIRECTION_RIGHT) {

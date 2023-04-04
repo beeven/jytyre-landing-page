@@ -10,7 +10,7 @@ export class AdvantageComponent {
     constructor(private router: Router) { }
 
     onSwipe(ev: HammerInput) {
-        console.log(ev);
+        //console.log(ev);
         if (ev.direction === Hammer.DIRECTION_LEFT) {
             this.router.navigateByUrl('/history');
         } else if (ev.direction === Hammer.DIRECTION_RIGHT) {
